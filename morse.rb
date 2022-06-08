@@ -6,12 +6,12 @@ def decode_char(char)
            '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T',
            '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
            '-.--' => 'Y', '--..' => 'Z' }
-  return code[char];
+  code[char]
 end
 
 def decode_word(word)
   string = ''
-  characters = word.split(' ')
+  characters = word.split
   characters.each { |char| string.concat(decode_char(char)) }
-  return string
+  string
 end
