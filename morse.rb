@@ -8,4 +8,7 @@ def decode_char(char)
              '-.--' => 'Y', '--..' => 'Z' }
     return code[char];
   end
-  
+
+def decode_word(word)
+  string = ''
+  characters = word.split(' ')
