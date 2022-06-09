@@ -15,3 +15,13 @@ def decode_word(word)
   characters.each { |char| string.concat(decode_char(char)) }
   string
 end
+
+def decode(phrase)
+  string = ''
+  words = phrase.split('   ')
+  words.each { |word| string.concat("#{decode_word(word)} ") }
+  string
+end
+
+print decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+# A BOX FULL OF RUBIES
